@@ -1,6 +1,5 @@
 import { Button } from './ui/button';
 import { ImageWithFallback } from './figma/ImageWithFallback';
-import { Download } from 'lucide-react';
 
 export function Hero() {
   return (
@@ -18,9 +17,8 @@ export function Hero() {
               PSYMED is the comprehensive platform that centralizes clinical management, optimizes treatment tracking, and reduces administrative burden by 30%, allowing mental health professionals to focus on what really matters: their patients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="outline" className="gap-2">
-                <Download className="w-4 h-4" />
-                Download Now
+              <Button variant="outline" className="gap-2" onClick={() => window.open('https://psymed-frontend.vercel.app/home', '_blank')}>
+                Start now
               </Button>
             </div>
             <div className="mt-8 flex items-center gap-8">

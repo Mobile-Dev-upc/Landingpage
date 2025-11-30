@@ -28,10 +28,10 @@ export function CTA() {
               Join PSYMED and transform how you manage your patients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" style={{ background: '#69BFB6', color: 'white' }}>
+              <Button size="lg" style={{ background: '#69BFB6', color: 'white' }} onClick={() => window.open('https://psymed-frontend.vercel.app/home', '_blank')}>
                 Sign Up
               </Button>
-              <Button size="lg" variant="outline" style={{ borderColor: '#69BFB6', color: '#69BFB6' }}>
+              <Button size="lg" variant="outline" style={{ borderColor: '#69BFB6', color: '#69BFB6' }} onClick={() => window.open('https://youtu.be/97MtjWkinhc', '_blank')}>
                 View Demo
               </Button>
             </div>
